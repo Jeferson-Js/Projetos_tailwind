@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret of the languages</title>
+    <link rel="shortcut icon" href="./img/translate.png" type="image/x-icon" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="flex">
+      <nav class="flex justify-between items-center w-full h-20 bg-cyan-400 fixed px-3 z-40">
+        <span class="flex items-center gap-2">
+            <div class="bg-white p-1 rounded-md">
+                <img src="./img/translate.png" alt="logo" class="w-16 h-16" />
+            </div>
+          <h2 class="lg:text-lg md:text-base text-sm hover:text-white duration-700 animate-pulse cursor-pointer"><a href="#"></a>Secret of the languages</h2>
+        </span>
+        <span class="text-3xl cursor-pointer ml-auto flex items-center hover:text-white duration-300 lg:hidden md:hidden">
+          <ion-icon name="menu" onclick="btnMobile(this)"></ion-icon>
+        </span>
+        <ul class="hidden lg:flex lg:items-center gap-3 list-none">
+          <li class="lg:text-lg md:text-base text-sm font-serif capitalize hover:text-white duration-300"><a href="#home">home</a></li>
+          <li class="lg:text-lg md:text-base text-sm font-serif capitalize hover:text-white duration-300"><a href="#about">about</a></li>
+          <li class="lg:text-lg md:text-base text-sm font-serif capitalize hover:text-white duration-300"><a href="#gallery">gallery</a></li>
+          <li class="lg:text-lg md:text-base text-sm font-serif capitalize hover:text-white duration-300"><a href="#contact">contact</a></li>
+        </ul>
+        <div class="lg:hidden md:hidden">
+          <ul class="hidden absolute top-16 left-0 md:opacity-100 opacity-0 transition-opacity duration-300 shadow-lg bg-cyan-300 w-full h-60" id="list-mobile" >
+            <li class="pb-5 pt-4 px-2 w-36 hover:bg-white rounded-r-full hover:shadow-lg lg:text-lg md:text-base text-sm font-serif capitalize hover:text-gray-500 duration-300"><a href="#home" onclick="btnMobile(this)">home</a></li>
+            <li class="pb-5 pt-4 px-2 w-36 hover:bg-white rounded-r-full hover:shadow-lg lg:text-lg md:text-base text-sm font-serif capitalize hover:text-gray-500 duration-300"><a href="#about" onclick="btnMobile(this)">about</a></li>
+            <li class="pb-5 pt-4 px-2 w-36 hover:bg-white rounded-r-full hover:shadow-lg lg:text-lg md:text-base text-sm font-serif capitalize hover:text-gray-500 duration-300"><a href="#gallery" onclick="btnMobile(this)">gallery</a></li>
+            <li class="pb-5 pt-4 px-2 w-36 hover:bg-white rounded-r-full hover:shadow-lg lg:text-lg md:text-base text-sm font-serif capitalize hover:text-gray-500 duration-300"><a href="#contact" onclick="btnMobile(this)">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="min-h-screen flex justify-center items-center bg-[url('./img/banner.jpg')]">
+        <div class="flex justify-end items-center backdrop-blur-sm p-10 px-60 rounded-md">
+            <h1 class="text-white text-2xl font-semibold animate-pulse">Polyglot</h1>
+        </div>
+      </section>
+      <section id="about" class="min-h-screen flex justify-center items-center">
+          <!-- <h2>About</h2> -->
+            <div class="shadow-md shadow-cyan-200 w-72 rounded-md p-14 pb-10">
+                <h2 class="text-center my-2 mb-4">Nossa Histórya</h2>
+                <p class="text-center">Fundada em [ano de fundação], a Secret of the Languages nasceu do sonho de conectar pessoas através das fronteiras linguísticas. Como fundador, [seu nome], apaixonado por idiomas e viagens, percebeu a lacuna existente no mercado educacional para um aprendizado de idiomas mais envolvente e significativo. Assim, ele decidiu criar uma plataforma onde os idiomas não fossem apenas ensinados, mas também celebrados em sua riqueza cultural e contextual.</p>
+            </div>
+            <div class="shadow-md shadow-cyan-200 w-72 rounded-md p-14 mb-3"> 
+                <h2 class="text-center my-2 mb-4">Nossa missão</h2>
+                <p class="text-center">Nossa missão é clara e inspiradora: capacitamos indivíduos a se comunicarem eficazmente em diversos idiomas, abrindo portas para oportunidades ilimitadas e compreensão global. Acreditamos que a comunicação vai além das palavras - ela carrega consigo nuances culturais, históricas e emocionais que podem ser experimentadas plenamente apenas quando se entende o idioma que está sendo falado.</p>
+            </div>
+      </section>
+      <section
+        id="gallery"
+        class="min-h-screen flex justify-center items-center bg-gray-300"
+      >
+      <section id="gallery" class="min-h-screen flex justify-center items-center bg-cover bg-[url('./img/banner-languages.png')]">
+        <div>
+          <h2 class="text-center">Gallery</h2>
+          <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-3 justify-items-center">
+            <!-- Card 1 -->
+            <div class="backdrop-blur-sm hover:scale-125 duration-500 cursor-pointer p-3 rounded-lg shadow-md">
+              <img src="./img/france.png" alt="france" class="w-40 h-40">
+            </div>
+            <div class="bg-white p-3 rounded-lg shadow-md">
+                <img src="./img/arab.png" alt="arabe" class="w-40 h-40">
+              </div>
+            <div class="bg-white p-3 rounded-lg shadow-md">
+              <img src="./img/germany.png" alt="arabe" class="w-40 h-40">
+            </div>
+            <div class="bg-white p-3 rounded-lg shadow-md">
+                <img src="./img/arab.png" alt="arabe" class="w-40 h-40">
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      </section>
+      <section
+        id="contact"
+        class="min-h-screen flex justify-center items-center"
+      >
+        <div>
+         <form action="#" method="post" class="w-72 h-64 bg-cyan-400 rounded-md shadow-lg">
+            <div class="h-60">
+                <h3 class="text-center text-2xl py-2 pb-2 text-white">Contato</h3>
+                <div class="m-3 flex justify-center">
+                    <input type="text" id="name_form" class="py-2 w-60 px-2 rounded-md focus:outline-red-300 shadow-lg" placeholder="Digite seu nome" required>
+                </div>
+                <div class="m-3 flex justify-center">
+                    <input type="email" class="py-2 w-60 px-2 rounded-md focus:outline-red-300 shadow-lg" placeholder="Digite seu email" required>
+                </div>
+                <div>
+                    <button type="submit" class="flex mx-auto mt-8 py-1 px-10 rounded-md bg-green-300 hover:bg-green-400 duration-700 font-semibold text-white shadow-lg">Submit</button>
+                </div>
+            </div>
+            </form>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full h-16 flex justify-center items-center gap-3 bg-cyan-400">
+        <div class="bg-white p-1 rounded-md">
+            <img src="./img/translate.png" alt="logo" class="w-10 h-10 animate-pulse">
+        </div>
+        <p class="tex-2xl text-white lg:text-lg md:text-base tex-sm">All rights reservd &copy; Oliveira.js</p>
+    </footer>
+  </body>
+</html>
