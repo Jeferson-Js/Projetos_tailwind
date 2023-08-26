@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu mobile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body class="bg-cyan-400">
+    <header class="flex">
+      <nav class="flex justify-between items-center w-full h-16 bg-white px-2">
+        <span class="flex items-center gap-3">
+          <img src="https://via.placeholder.com/50" alt="logo" />
+          <h2
+            class="font-semibold text-cyan-400 lg:text-lg md:text-base text-sm animate-pulse"
+          >
+            Oliveira.js
+          </h2>
+        </span>
+        <span class="text-3xl text-cyan-400 flex items-center ml-auto cursor-pointer lg:hidden md:hidden">
+          <ion-icon name="grid" onclick="btnMobile(this)"></ion-icon>
+        </span>
+        <!-- lista desktop -->
+        <ul class="lg:flex lg:items-center lg:gap-2 hidden ml-auto">
+          <li class="lg:text-lg md:text-base text-sm text-cyan-400 capitalize "><a href="#">home</a></li>
+          <li class="lg:text-lg md:text-base text-sm text-cyan-400 capitalize "><a href="#">about</a></li>
+          <li class="lg:text-lg md:text-base text-sm text-cyan-400 capitalize "><a href="#">contact</a></li>
+        </ul>
+        <!-- lista mobile -->
+        <div class="lg:hidden md:hidden">
+          <ul class="absolute flex-col flex justify-center items-center top-16 left-0 bg-white w-full h-44 shadow-lg opacity-0 md:opacity-100 transition-opacity duration-300" id="list">
+            <li class="px-1 m-2 w-36 lg:text-lg md:text-base text-sm text-cyan-400 duration-500 py-3 rounded-md text-center hover:shadow-lg cursor-pointer hover:bg-cyan-400 hover:text-white capitalize"><a href="#">home</a></li>
+            <li class="px-1 m-2 w-36 lg:text-lg md:text-base text-sm text-cyan-400 duration-500 py-3 rounded-md text-center hover:shadow-lg cursor-pointer hover:bg-cyan-400 hover:text-white capitalize"><a href="#">about</a></li>
+            <li class="px-1 m-2 w-36 lg:text-lg md:text-base text-sm text-cyan-400 duration-500 py-3 rounded-md text-center hover:shadow-lg cursor-pointer hover:bg-cyan-400 hover:text-white capitalize"><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
